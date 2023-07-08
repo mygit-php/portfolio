@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgba(15, 15, 15, 0.911);
+}
+
+.mother{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    gap: 50px;
+    transition: 0.3s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.photo{
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0 5px 10px rgba(59, 59, 59, 0.253);
+   border-radius: 5%;
+
+}
+.photo img{
+  box-shadow: 0 5px 10px rgba(59, 59, 59, 0.253);
+  border-radius: 5%;
+  transition:  0.3s;
+   width: 100%;
+ cursor: pointer;
+}
+.photo img:hover{
+    transform: translateY(-40px);
+       opacity: 0.8;
+}
+.titleh{
+  animation: slidTop 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slidTop{
+  0%{
+    transform: translateY(-80px);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.search{
+  position: absolute;
+  right: 90px;
+  display: flex;
+  height: 80px;
+}
+.contain{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
